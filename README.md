@@ -10,7 +10,7 @@ The Salat Timer app is a React application designed to help users keep track of 
 
 ## Link
 
-- Live Site URL: [YourCar](https://your-car-website.vercel.app/)
+- Live Site URL: [Salat Timer](https://salat-timer-app.vercel.app/)
 
 ## Built with
 
