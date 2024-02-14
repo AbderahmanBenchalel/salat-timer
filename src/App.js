@@ -34,7 +34,7 @@ export default function App() {
     async function fetchTime() {
       try {
         const res = await fetch(
-          ` http://api.aladhan.com/v1/timingsByCity?city=${selectedCity}&country=${country}&method=99`
+          ` https://api.aladhan.com/v1/timingsByCity?city=${selectedCity}&country=${country}&method=99`
         );
         const data = await res.json();
         if (data.status !== "OK") throw new Error("Something went wrong");
