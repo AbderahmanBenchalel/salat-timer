@@ -64,6 +64,8 @@ export default function App() {
         />
       </TimerHeader>
 
+      <SelectCity city={selectedCity} onChangeCity={handleChangeCity} />
+
       <ul className="cards">
         <Card img={<img src="fajr-prayer.png" alt="fajr-prayer" />}>
           <p>الفجر</p>
@@ -87,12 +89,9 @@ export default function App() {
 
         <Card img={<img src="night-prayer.png" alt="night-prayer" />}>
           <p>العشاء</p>
-          <h2>{isha}</h2>
           {isThereData ? <h2>{isha}</h2> : <Loader design="load-time" />}
         </Card>
       </ul>
-
-      <SelectCity city={selectedCity} onChangeCity={handleChangeCity} />
     </article>
   );
 }
